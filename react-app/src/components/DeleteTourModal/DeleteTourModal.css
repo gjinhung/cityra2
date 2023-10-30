@@ -1,0 +1,59 @@
+.deleteTourContainer {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+    margin: 20px auto;
+  }
+  
+  .deleteHeader {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .deleteText {
+    text-align: center;
+  }
+  
+
+  .yes-delete{
+    background-color: #ffffff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 3px;
+    font-weight: 200;
+    line-height: .0;
+    /* padding: 1rem 1.6rem; */
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content
+  }
+  
+  
+  .yes-delete:hover {
+    background-color: red;
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .yes-delete {
+      font-size: 1.125rem;
+      padding: 1rem 1rem;
+    }
+  }

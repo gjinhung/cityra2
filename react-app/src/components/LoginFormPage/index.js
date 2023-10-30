@@ -9,7 +9,7 @@ function LoginFormPage() {
   const sessionUser = useSelector((state) => state.session.user);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState([]);
+  const [errors, setErrors] = useState({});
 
   if (sessionUser) return <Redirect to="/" />;
 
@@ -21,36 +21,54 @@ function LoginFormPage() {
     }
   };
 
+  const handleDemo = async (e) => {
+    let demail = "demo@aa.io"
+    let dpassword = "password"
+    const data = await dispatch(login(demail, dpassword));
+    if (data) {
+      setErrors(data);
+    }
+  }
+
   return (
-    <>
-      <h1>Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <ul>
-          {errors.map((error, idx) => (
-            <li key={idx}>{error}</li>
-          ))}
-        </ul>
+    // <div className="loginpage">
+    <form onSubmit={handleSubmit}
+      className="login-form">
+      <div className="form-group">
+        <h3 className="step-title">Log In</h3>
         <label>
-          Email
-          <input
-            type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+          <div style={{ color: "red" }}>{errors["email"]}</div>
         </label>
+        <input
+          type="text"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <label className="form-group">
         <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div style={{ color: "red" }}>{errors["password"]}</div>
         </label>
-        <button type="submit">Log In</button>
-      </form>
-    </>
+        <input
+          type="password"
+          placeholder="Password"
+          autoComplete="off"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </label>
+      <button className="loginsignup" type="submit">Log In</button>
+
+      <h5
+        className="demoUser"
+        onClick={handleDemo}>
+        Click Here for Demo User
+      </h5>
+    </form>
+    // </div>
   );
 }
 

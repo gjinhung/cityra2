@@ -1,0 +1,125 @@
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #f7f5f5;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.timeDate-container{
+    display: flex;
+    justify-content: center;
+}
+
+.guide_img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    width: 350px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.image {
+    width: 350px;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    /* opacity: 1; */
+    transition: 0.6s;
+    color: white
+}
+
+.content:hover{
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.content div{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffe100;
+    font-size: 19px
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+    width: 350px;
+}
+
+.tours-buttons{
+  background-color: #ffffff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3px;
+  font-weight: 200;
+  line-height: .0;
+  /* padding: 1rem 1.6rem; */
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content
+}
+
+
+.tours-buttons:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .tours-buttons {
+    font-size: 1.125rem;
+    padding: 1rem 1rem;
+  }
+}
+
+.toursicon{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.linkbuttons{
+    margin-right: 10px;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.edit-review-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}

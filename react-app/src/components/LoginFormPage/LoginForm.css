@@ -1,0 +1,38 @@
+/* .loginpage{
+    background-color: red;
+    width: 339px;
+    border: 3px solid #333;
+} */
+
+.login-form{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    gap: .25em;
+  }
+
+.form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+  }
+
+.demoUser{
+  cursor: pointer;
+}
+
+.demoUser:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+.createTour-container{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+.title-tour-container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title-tour{
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #ffe100;
+}
+
+.language, .city, .price, .description, .type, .date{
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin-bottom: 5px;
+}
+
+#modal-content {
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.post-tour-buttons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

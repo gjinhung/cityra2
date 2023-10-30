@@ -1,0 +1,58 @@
+
+.LogInSignUp-false{ 
+    animation: fade 250ms ease-in-out forwards;
+    display: none;
+}
+
+.LogInSignUp-true{
+    animation: slide 250ms 125ms ease-in-out both;
+    display: block;
+}
+
+.SearchBar-true{
+    animation: fade 250ms ease-in-out forwards;
+    display: none;
+}
+
+.SearchBar-false{
+    animation: slide 250ms 125ms ease-in-out both;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(.75);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+ .loading-style{
+  display: flex;
+  height: 100vh;
+  width:  100vw; 
+  justify-content: center;
+ }
+
+ .loading-font{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  height: auto;
+ }

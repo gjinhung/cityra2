@@ -1,0 +1,68 @@
+#editReviewContainer {
+    margin: 100px auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 15px;
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+    margin: 20px auto;
+  }
+  
+  .editReviewHeading {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  .rating-input {
+    display: flex;
+  }
+  
+  .submit-button {
+    background-color: rgb(244, 7, 7);
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .submit-button:hover {
+    background-color: darkred;
+  }
+  
+  .submit-button-inactive {
+    background-color:gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button-inactive:hover {
+    background-color: gray;
+  }
+
+
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+  }

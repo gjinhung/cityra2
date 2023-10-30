@@ -1,0 +1,171 @@
+.userImg{
+    height: 150px;
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviewImg{
+    height: 50px;
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile_pic{
+    display: flex;
+    align-items: center;
+}
+
+.rating-input {
+    display: flex;
+    margin: auto;
+}
+
+#postReviewContainer {
+    margin: 100px auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 5px;
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+    margin: 20px auto;
+}
+
+.postReviewHeading {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.filled {
+    color: black
+}
+
+.empty {
+    color: grey
+}
+
+.rating-input {
+    display: flex;
+    
+}
+
+.empty-space{
+    height: 15px;
+    margin: 0
+}
+
+.guide-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+
+}
+
+.left-side{
+    width: 35%;
+    padding-right: 30px;
+}
+
+.right-side{
+    width: 20%;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.guide_details-container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewer-container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+
+.guide-rating{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.guide-info-container, .rating-container{
+    padding-left: 15px;
+}
+
+.review-date{
+    color: gray;
+    padding-left: 15px;
+    align-self: center;
+    font-size: small;
+}
+
+.reviewer-name{
+    font-size: small;
+    align-self: center;
+}
+
+.namedatecontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.booking-title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.location-selection{
+    display: flex;
+    flex-direction: column;
+}
+
+.select-city{
+    width: fit-content;
+}
+
+.booking-details-container{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(191, 189, 189);
+}
+
+.booking-text{
+font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+margin-bottom: 5px;
+font-size: small;
+}
+
+.booking-checkbox{
+    align-self: center;
+    padding-right: 10px;
+}
+
+.booking-text-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.booking-title-text{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.warning{
+    color: red;
+    font-size: small;
+    text-decoration: underline;
+}

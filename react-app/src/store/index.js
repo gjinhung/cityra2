@@ -1,9 +1,25 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import session from './session'
+import tours from './tour'
+import bookings from './booking'
+import dates from './date'
+import cities from './city'
+import languages from './language'
+import specialties from './specialty';
+import reviews from './reviews';
+import users from './users'
 
 const rootReducer = combineReducers({
   session,
+  tours,
+  bookings,
+  dates,
+  cities,
+  languages,
+  specialties,
+  reviews,
+  users
 });
 
 

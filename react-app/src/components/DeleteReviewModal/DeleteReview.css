@@ -1,0 +1,22 @@
+.deleteSpotContainer {
+    margin: 100px auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 15px;
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+    font-family: "Manrope", sans-serif;
+    margin: 20px auto;
+  }
+  
+  .deleteHeader {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .deleteText {
+    text-align: center;
+  }
+  

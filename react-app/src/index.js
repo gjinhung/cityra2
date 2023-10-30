@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-
+import { LogInSignInProvider } from "./context/NavToggle";
 import { ModalProvider, Modal } from "./context/Modal";
+import { SearchProvider } from "./context/SearchBar";
 import configureStore from "./store";
 import * as sessionActions from "./store/session";
 import App from "./App";
@@ -25,8 +26,12 @@ function Root() {
 		<ModalProvider>
 			<Provider store={store}>
 				<BrowserRouter>
-					<App />
-					<Modal />
+					<LogInSignInProvider>
+						<SearchProvider>
+							<App />
+							<Modal />
+						</SearchProvider>
+					</LogInSignInProvider>
 				</BrowserRouter>
 			</Provider>
 		</ModalProvider>
